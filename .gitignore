@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Data & large models (train locally; see models/README.md)
+data/
+models/*.pth
+models/*.pt
+*.onnx
+
+# Logs / env secrets
+.env
+*.log
+
+# Optional: keep sample-images (small). Uncomment to ignore uploads folder if you add one.
+# uploads/
