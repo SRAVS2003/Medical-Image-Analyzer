@@ -29,25 +29,34 @@ cd Medical-Image-Analyzer
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+```
 
 ### Model weights (Tab C)
 
 ```powershell
 python ml/train_demo.py
+```
 
-Optional — Kaggle Chest X-Ray Pneumonia in data/chest_xray/:
+Optional — [Kaggle Chest X-Ray Pneumonia](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) in `data/chest_xray/`:
 
-
+```powershell
 python ml/train_chest_xray.py --data-dir data/chest_xray --epochs 5
-Run
+```
 
+## Run
+
+```powershell
 copy frontend\page.txt frontend\index.html
 cd backend
 uvicorn main:app --reload --host 127.0.0.1 --port 8000
-Open http://127.0.0.1:8000
+```
 
-Disclaimer
-Research and learning demo only — not for clinical diagnosis or medical decisions.
+Open **http://127.0.0.1:8000**
 
-Author
-SRAVS2003
+## Disclaimer
+
+Research and learning demo only — **not for clinical diagnosis or medical decisions.**
+
+## Author
+
+[SRAVS2003](https://github.com/SRAVS2003)
